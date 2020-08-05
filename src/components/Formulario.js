@@ -58,35 +58,36 @@ const Formulario = ({crearCita}) => {
 
     return (
         <Fragment>
-            <h2>Crear cita</h2>
+            <h2>Agendar asistencia</h2>
             {error ?  <p className="alerta-error">Hay campos sin diligenciar</p>  : null }
 
             <form
                 onSubmit={submitCita}
+                className="form-icc"
             
             >
-                <label>Paciente</label>
+                <label>Nombre completo del asistente</label>
 
                 <input
                  type="text" 
                  name="paciente" 
                  className="u-full-width"   
-                 placeholder="Nombre paciente"  
+                 placeholder="Nombre del asistente"  
                  onChange={actualizarState}   
                  value={paciente}  
                  />
 
-                <label>Responsable</label>
+                <label>Número de contácto</label>
                 <input
                  type="text" 
                  name="responsable" 
                  className="u-full-width"   
-                 placeholder="Nombre responsable"    
+                 placeholder="# de contacto"    
                  onChange={actualizarState} 
                  value={responsable} 
                  />
 
-                <label>Fecha</label>
+                <label>Fecha de asistencia</label>
                 <input
                  type="date" 
                  name="fecha" 
@@ -115,7 +116,7 @@ const Formulario = ({crearCita}) => {
 
                  <button
                  type="submit"
-                 className="u-full-width button-primary "
+                 className="u-full-width button-icc "
                  >Agendar</button>               
 
             </form>
