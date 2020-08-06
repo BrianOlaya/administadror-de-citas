@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 const Formulario = ({crearCita}) => {
 
     const [cita, actualizarCita]=useState({
-        paciente:'',
-        responsable:'',
+        asistente:'',
+        contacto:'',
         fecha:'',
         hora:'',
         observaciones:'' 
@@ -23,13 +23,13 @@ const Formulario = ({crearCita}) => {
             })
         }
 
-        const {paciente,responsable, fecha, hora, observaciones}=cita
+        const {asistente,contacto, fecha, hora, observaciones}=cita
 
         const submitCita =e=>{
             e.preventDefault();
 
             //validar
-            if (paciente.trim()==="" || responsable.trim()==="" || fecha.trim()==="" || hora.trim()===""){
+            if (asistente.trim()==="" || contacto.trim()==="" || fecha.trim()==="" || hora.trim()===""){
 
               actualizarError(true)
                 return;
@@ -47,8 +47,8 @@ const Formulario = ({crearCita}) => {
 
             //resetear formulario
             actualizarCita({
-                paciente:'',
-                responsable:'',
+                asistente:'',
+                contacto:'',
                 fecha:'',
                 hora:'',
                 observaciones:'' 
@@ -70,21 +70,21 @@ const Formulario = ({crearCita}) => {
 
                 <input
                  type="text" 
-                 name="paciente" 
+                 name="asistente" 
                  className="u-full-width"   
                  placeholder="Nombre del asistente"  
                  onChange={actualizarState}   
-                 value={paciente}  
+                 value={asistente}  
                  />
 
                 <label>Número de contácto</label>
                 <input
-                 type="text" 
-                 name="responsable" 
+                 type="number" 
+                 name="contacto" 
                  className="u-full-width"   
                  placeholder="# de contacto"    
                  onChange={actualizarState} 
-                 value={responsable} 
+                 value={contacto} 
                  />
 
                 <label>Fecha de asistencia</label>

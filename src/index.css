@@ -20,18 +20,21 @@ h1, h2  {
   letter-spacing: 1px;
 }
 .title-icc{
-  background-color: #457b9dde;
+  background-color: #2EC4B6;
 }
 .button-icc{
-  background-color: #457B9D;
+  background-color: #2EC4B6;
   color:#F1FAEE ;
   border-style: none;
 }
 
 .button-icc:hover{
-background-color:#1D3557;
-color:#F1FAEE ;
+background-color:#011627;
+color:#2EC4B6 ;
+border-style: solid;
+border-color: #2EC4B6;
 }
+
 .form-icc{
   background-color: rgba(0, 0, 0, 0.596);
   padding: 5%;
@@ -94,21 +97,21 @@ input[type="time"] {
   border-bottom-right-radius: 1rem;
 }
 .button.eliminar{
-  background-color: #E63946;
+  background-color: #E71D36;
   color: white;
   margin-top: 2rem;
   border-style: none;
 }
 .button.eliminar:hover {
   background-color: white;
-  color: #E63946;
+  color: #E71D36;
   border-style: solid;
-  border-color: #E63946;
+  border-color: #E71D36;
 }
 
 .alerta-error {
   background-color: white;
-  color: red;
+  color: #E71D36;
   padding: 1rem;
   font-size: 2rem;
   text-transform: uppercase;

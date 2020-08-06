@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 const Cita = ({ cita, eliminarCita }) => (
     <div className="cita">
-        <p>Paciente: <span>{cita.paciente}</span> </p>
-        <p>Responsble: <span>{cita.responsable}</span> </p>
-        <p>Fecha: <span>{cita.fecha}</span> </p>
+        <p>Asistente: <span>{cita.asistente}</span> </p>
+        <p># de contacto: <span>{cita.contacto}</span> </p>
+        <p>Fecha de asistencia: <span>{cita.fecha}</span> </p>
         <p>Hora: <span>{cita.hora}</span> </p>
         <p>Observaciones: <span>{cita.observaciones}</span> </p>
 

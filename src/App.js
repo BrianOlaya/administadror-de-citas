@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import Formulario from './components/Formulario';
 import Cita from './components/Cita';
-import video from './components/video/video5.mp4';
+import video from './components/video/video2.mp4';
 
 function App() {
 
@@ -56,7 +56,7 @@ function App() {
         >
           <source src={video} type="video/mp4" />
         </video>
-        <h1 className="title-icc">Control de asistencia icc itagüi</h1>
+        <h1 className="title-icc">Control de asistentes</h1>
 
         <div className="container">
           <div className="row">
